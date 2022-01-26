@@ -1,6 +1,6 @@
 <?php
     // create config and connect to DataBase
-    $connect = mysqli_connect('localhost','root','root','newdatabase');;
+    $connect = mysqli_connect('localhost','root','root','newdatabase');
     $sql = "SELECT * FROM customers";
     $resoult = mysqli_query($connect, $sql);
     $rows = mysqli_fetch_all($resoult, MYSQLI_ASSOC);
@@ -9,12 +9,14 @@
 
         //write data to array
         for ($i=0; $i<count($rows); $i++){
-            array_push($sourseData,['person '.$i=>$rows[$i]]);
+            array_push($sourseData,['person '.($i+1)=>$rows[$i]]);
         }
 
         //create JSON
     $json = json_encode($sourseData);
 
+
+        echo($json);
 
 
 

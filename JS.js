@@ -23,7 +23,7 @@ function sendDataToServer() {
     const formData = new FormData();
     formData.append('person', JSON.stringify(request));
 
-    fetch('back.php', {
+    fetch('backEnd/back.php', {
         method: 'post',
         body: formData,
     });
