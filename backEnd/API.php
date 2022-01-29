@@ -9,7 +9,7 @@
 
         //write data to array
         for ($i=0; $i<count($rows); $i++){
-            array_push($sourseData,['person '.($i+1)=>$rows[$i]]);
+            array_push($sourseData,['person'=>$rows[$i]]);
         }
 
         //create JSON

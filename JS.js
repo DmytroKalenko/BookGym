@@ -1,14 +1,4 @@
-//Get from server
-// fetch('back.php',{
-//     method: 'get',
-//     header:{
-//         'Content-Type': 'application/x-www-form-urlencoded',
-//         'Content-Type': 'application/json'
-//     },
-// })
-//     .then(response => response.text())
-//     .then(data => console.log(data))
-//
+
 
 const customerName = document.querySelector('#customerName');
 const choosedHours = document.querySelector('#choosedTime');

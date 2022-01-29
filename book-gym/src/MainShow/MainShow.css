@@ -1,0 +1,7 @@
+.customers{
+    display: flex;
+    border: 1px solid #777777;
+}
+.customers_item{
+    margin-left: 2rem;
+}
