@@ -3,6 +3,7 @@ import MainShow from "./MainShow/MainShow";
 import Context from './Context';
 import {useEffect, useState} from "react";
 
+import './AppStyle.less';
 
 
 
