@@ -1,4 +1,7 @@
 <?php
+
+    header("Access-Control-Allow-Origin: *");
+
     // create config and connect to DataBase
     $connect = mysqli_connect('localhost','root','root','newdatabase');
     $sql = "SELECT * FROM customers";
