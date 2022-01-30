@@ -2,7 +2,7 @@
 import { useContext,} from "react";
 import Context from '../Context';
 import './style.scss'
-import './MainShowStyle.less'
+
 
 function MainShow(props){
     const value = useContext(Context);
@@ -11,7 +11,7 @@ function MainShow(props){
         function createTables() {
             return (
                 <div className="customers">
-                    <div className="customers_wrapper">
+                    <div className="customers_wrapper __names">
                         <h2>Customers name</h2>
                         <ul className="customers_names">
                             {value.context.state.map(element =>(
@@ -19,7 +19,7 @@ function MainShow(props){
                             ))}
                         </ul>
                     </div>
-                    <div className="customers_wrapper">
+                    <div className="customers_wrapper __times">
                         <h2>Customers time</h2>
                         <ul className="customers_times">
                             {value.context.state.map(element =>(
@@ -35,11 +35,16 @@ function MainShow(props){
 
         return (
             <>
-                {createTables()}
-                <button onClick={() => {
-                    props.updateCustomersList();
-                }}>Update List
-                </button>
+                <div className="main-page">
+                    {createTables()}
+                    <button onClick={() => {
+                        props.updateCustomersList();
+                    }}>Update List
+                    </button>
+
+                </div>
+
+
 
             </>
         )

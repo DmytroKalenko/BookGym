@@ -1,4 +1,18 @@
-.customers{
-  background: red;
 
+.customers{
+  display: flex;
+  font-size: 1rem;
+  border: 1px solid #777777;
+  .customers_wrapper{
+      &.__names{
+        h2{
+          background: #2d3e50;
+        }
+      }
+    &.__times{
+      h2{
+        background: #f4d654;
+      }
+    }
+  }
 }

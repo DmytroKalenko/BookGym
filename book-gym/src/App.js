@@ -1,9 +1,8 @@
-import './App.css';
+import './App.scss';
 import MainShow from "./MainShow/MainShow";
 import Context from './Context';
 import {useEffect, useState} from "react";
 
-import './AppStyle.less';
 
 
 
@@ -55,7 +54,10 @@ function App() {
     return (
       <>
         <Context.Provider value={{context,addContentToContext}}>
-            <MainShow updateCustomersList={updateCustomersList}/>
+            <div className="wrapper">
+                <MainShow updateCustomersList={updateCustomersList}/>
+            </div>
+
         </Context.Provider>
 
       </>
